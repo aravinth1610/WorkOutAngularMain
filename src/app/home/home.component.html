@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col m-3" *ngFor="let item of student">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Roll No: {{ item.rollno + ",Class : " + item.class }}
+          </h6>
+          <div *ngIf="isLogin" class="card-text">
+            <ul class="list-group">
+              <li class="list-group-item">English : {{ item.mark.english }}</li>
+              <li class="list-group-item">Tamil : {{ item.mark.tamil }}</li>
+              <li class="list-group-item">Maths : {{ item.mark.maths }}</li>
+            </ul>
+          </div>
+          <button [routerLink]="'/std/'+ item.rollno" type="button" class="btn btn-outline-primary m-2">Details</button>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

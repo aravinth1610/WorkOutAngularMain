@@ -1,0 +1,7 @@
+npm install bootstrap@5
+
+npm install jquery
+
+npm install ngx-toastr --save
+
+npm install @angular/animations --save

@@ -1,0 +1,13 @@
+
+<form [formGroup]="UserInp" (ngSubmit)="sub()" >
+    <input type="text" formControlName="name" placeholder="UserName" required>
+    <input type="text" formControlName="mobNo" placeholder="mobile nO" required>
+    <input type="text" formControlName="gmail" placeholder="gmail" required>
+    <div  formGroupName="Address">
+        <input type="text" formControlName="address1" placeholder="Address" required>
+        <input type="text" formControlName="city" placeholder="city" required>
+        <input type="text" formControlName="state" placeholder="state" required>
+    </div>
+    <button type="submit" [disabled]="!UserInp.valid">Submit</button>
+    </form>
+    <!-- <button (click)="showError()"></button> -->
