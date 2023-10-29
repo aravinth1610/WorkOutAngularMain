@@ -1,7 +1,14 @@
+In style
+"./node_modules/bootstrap/dist/css/bootstrap.min.css"
 npm install bootstrap@5
 
+In Script
+"./node_modules/jquery/dist/jquery.min.js",
+"./node_modules/bootstrap/dist/js/bootstrap.min.js"
 npm install jquery
 
+In style
+"node_modules/ngx-toastr/toastr.css",
 npm install ngx-toastr --save
 
 npm install @angular/animations --save
